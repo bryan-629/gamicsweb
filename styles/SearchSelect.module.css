@@ -1,0 +1,38 @@
+.buttonSearchActive{
+    letter-spacing: 1.25px;
+    color: var(--white);
+    font-family: var(--fuente-body);
+    font-size: 18px;
+    background-color: var(--primary);
+    padding: 9px;
+    border-radius:3px ;
+    border-style: none;
+    cursor: pointer;
+    transition: all ease .09s ;
+    width: 21%;
+}
+.buttonSearchActive:hover{
+    -webkit-box-shadow: 0px 0px 22px -4px #FF0000; 
+    box-shadow: 0px 0px 22px -4px var(--primary);
+}
+.buttonSearchDesactive{
+    letter-spacing: 1.25px;
+    color: var(--white);
+    font-family: var(--fuente-body);
+    font-size: 18px;
+    background-color: var(--cardDark);
+    padding: 9px;
+    border-radius:3px ;
+    border-style: none;
+    transition: all ease .09s ;
+    cursor: pointer;
+    width: 21%;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    width:70% ;
+}
+.logos{
+    font-size: 30px;
+}

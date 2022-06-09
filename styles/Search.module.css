@@ -40,12 +40,8 @@
 }
 .searchBtn{
     background-color: var(--primary);
-    padding: 14px;
     width: 40%;
-    border-radius:3px ;
-    border-style: none;
     transition: all ease .09s ;
-    margin:12px
 }
 .searchBtn:hover{
     -webkit-box-shadow: 0px 0px 22px -4px #FF0000; 
@@ -54,4 +50,17 @@
 .searchBtn:active{
     transform: scale(.98);
 }
-  
+.userList{
+    width: 70%;
+    border-radius: 3px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+}
+.result{
+    width: 100%;
+    font-family: var(--fuente-body);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: large;
+  }
