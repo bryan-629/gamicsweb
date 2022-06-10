@@ -28,7 +28,6 @@ import {
   } from 'chart.js';
   
 function LineChart({periods, periodsDate}) {
-    console.log(periodsDate)
     Chart.register(
         ArcElement,
         LineElement,

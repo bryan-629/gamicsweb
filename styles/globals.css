@@ -94,7 +94,7 @@ p{
 }
 .body2{
   font-family: var(--fuente-body);
-  font-size: 10px;
+  font-size: 14px;
   color: var(--white);
 }
 /*---------------------------------------------*/
@@ -271,6 +271,12 @@ input:focus{
 }
 .p-8{
   padding: 8px;
+}
+.pl-8{
+  padding-left: 8px;
+}
+.pr-8{
+  padding-right: 8px;
 }
 .pt-8{
   padding-top: 8px;
