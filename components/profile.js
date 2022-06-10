@@ -2,38 +2,23 @@ import React from 'react'
 import MatchList from "./MatchList";
 import Navbar from "./Navbar";
 import LineChart from "./LineChart";
-import Image from "next/image";
+
 import styles from "../styles/Profile.module.css";
+import  UserImg  from './UserImgLevel';
 function Profile({userData,matches,id,setUserName,platform}) {
   return (
     <>
           <Navbar></Navbar>
           <div className={'contentWidthDiv'}>
-            <div className={`d-flex mb-24 ${styles.userProfile}`}>
-              <div className={`${styles.userImg}`}>
-                <Image
-                  width={70}
-                  height={70}
-                  src="/img/Logo_dark.png"
-                  alt="user image"
-                ></Image>
-              </div>
-              <div className="jus-center column ml-24">
-                <p className="upper">{userData.data.userName}</p>
-                <p className="subtitle2 my-8">
-                  Prestige: <span>{userData.data.prestige}</span>
-                </p>
-                <p className="subtitle2">
-                  Level: <span>{userData.data.level}</span>
-                </p>
-              </div>
+            <div className={`d-flex ${styles.userProfile}`}>
+              <UserImg level={userData.data.level} userName={userData.data.userName}></UserImg>
             </div>
             {/*<div className={`cardBackground radius mb-12 ${styles.menu}`}></div>*/}
             <div className={`w100 radius d-flex mediaColumn `}>
               <div className={` radius columnLeft`}>
                 <div className={` p-16 mb-8 radius ${styles.card}`}>
                   <div className="mb-8">
-                    <p className="overline">OVERVIEW</p>
+                    <p className="overline">LIFETIME STATS</p>
                   </div>
                   <div className="jus-center mb-16">
                     <h5>{userData.data.userDataBrCal.kdLeague}</h5>

@@ -29,13 +29,13 @@
 }
 
 .searchInput{
-    width: 70%;
-  height: 49px;
-  border-radius: 3px;
+  width: 70%;
+  padding:7px ;
+  margin-bottom: 13px;
+  border-radius: 5px;
   border-style: none;
   font-family: var(--fuente-body);
   font-size: 24px;
-  padding: 16px;
   text-align: center;
 }
 .searchBtn{
@@ -62,5 +62,6 @@
     font-family: var(--fuente-body);
     font-weight: 600;
     text-transform: uppercase;
-    font-size: large;
+    font-size:medium;
+    
   }

@@ -3,16 +3,18 @@
 :root {
   --primary: #FF4545 ;
   --secondary: #F4F4F9;
-  --white: #CCCCCC;
+  --white: #ffffff;
   --positive: #05DC9B;
   --nevagtive:#FA3333;
-  --background: #0C0D0D;
-  --cardDark: #171717;
+  --background: #0E0E10;
+  --cardDark: #18181B;
   --black: #0C0D0D;
-  --gray: #A0A0A0;
+  --gray: #8E8E8E;
   --fuente-title: 'Unica One', sans-serif;
   --fuente-body: 'Roboto', sans-serif;
+  --mute: rgba(83, 83, 83, 80%);
 }
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -66,6 +68,7 @@ h6{
 .text-center{
   text-align: center;
 }
+
 p{
   font-family: var(--fuente-body);
   font-size: 16px;
@@ -76,9 +79,9 @@ p{
   text-overflow: ellipsis;
 }
 .overline{
-    font-family: var(--fuente-body);
-  font-size: 16px;
-  color: var(--white);
+  font-family: var(--fuente-body);
+  font-size: 10px;
+  color: var(--gray);
   letter-spacing: 1.5px;
 }
 .text-center{
@@ -97,6 +100,9 @@ p{
 /*---------------------------------------------*/
 
 /*COLORS*/
+.text-gray{
+  color: var(--gray);
+}
 .text-success{
   color: var(--positive);
 }
@@ -104,7 +110,7 @@ p{
   color: var(--nevagtive);
 }
 .text-mute{
-  color: var(--gray);
+  color: var(--mute);
 }
 .bg-gray{
   background-color: var(--gray);
@@ -127,8 +133,8 @@ p{
     font-family: var(--fuente-body);
     font-size: 18px;
     background-color: var(--primary);
-    padding: 14px;
-    border-radius:3px ;
+    padding: 10px;
+    border-radius:5px ;
     border-style: none;
     transition: all ease .09s ;
 }
@@ -150,23 +156,6 @@ p{
 
 input:focus{
   outline-color: var(--gray) ;
-}
-.searchButton{
-    
-  font-family: var(--fuente-title);
-  font-size: 24px ;
-  background-color: var(--secondary);
-  border-radius: 3px;
-  font-weight:900;
-  color: var(--gray);
-  width: 194px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.lupa{
-  font-size: 24px;
-  padding-left: 12px;
 }
 .contentWidthDiv{
   padding-right: 16%;
@@ -231,10 +220,10 @@ input:focus{
 
 /*-----------DIV STYLES & UTILITIES-----------------------*/
 .radius{
-  border-radius: 3px;
+  border-radius: 5px;
 }
 .mainContaner {
-  padding: 24px;
+  padding: 12px 30px;
 }
 .cursor{
   cursor: pointer;
@@ -266,6 +255,9 @@ input:focus{
 .m-8{
   margin: 8px;
 }
+.mt-8{
+  margin-top: 8px;
+}
 .my-8{
   margin-bottom: 8px;
   margin-top: 8px;
@@ -289,8 +281,14 @@ input:focus{
 .m-12{
   margin: 12px;
 }
+.ml-12{
+  margin-left: 12px;
+}
 .mb-12{
   margin-bottom: 12px;
+}
+.mt-12{
+  margin-top: 12px;
 }
 .my-12{
   margin-top: 12px;
@@ -301,6 +299,9 @@ input:focus{
 }
 .p-12{
   padding: 12px;
+}
+.pb-24{
+  padding-bottom: 24px;
 }
 .m-16{
   margin: 16px;
