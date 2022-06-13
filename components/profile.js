@@ -33,7 +33,7 @@ function Profile({userData,matches,id,setUserName,platform}) {
                     <MatchList platform={platform} setUserName={setUserName} id={id} userData={userData} matches={matches} userId={id}>asdfasdf asdfasdf</MatchList>
                     :
                      (<div className={`jus-center al-center ${styles.loading}`}>
-                     <h3>Loading...</h3>
+                     <h3 className='text-center'>Loading...</h3>
                    </div>) }
                 </div>
               </div>

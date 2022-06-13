@@ -11,6 +11,8 @@
 }
 .loading{
     height: 100vh;
+    display: flex;
+    justify-content: center;
 }
 /*Finaliza las partidas*/
 @media (max-width: 768px) {
