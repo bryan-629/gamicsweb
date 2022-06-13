@@ -5,7 +5,9 @@
   --secondary: #F4F4F9;
   --white: #ffffff;
   --positive: #05DC9B;
+  --positiveBg: #05dc9c6b;
   --nevagtive:#FA3333;
+  --negativeBg:#fa333373;
   --background: #0E0E10;
   --cardDark: #18181B;
   --black: #0C0D0D;
@@ -14,7 +16,10 @@
   --fuente-body: 'Roboto', sans-serif;
   --mute: rgba(83, 83, 83, 80%);
 }
-
+::selection {
+  color: white;
+  background: var(--primary);
+}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -162,13 +167,12 @@ input:focus{
   padding-left: 16%;
   display: flex;
   flex-direction: column;
-}
+};
 /*------------------------------------------*/
 
 
 /*-------------FLEXBOX----------------------*/
 .jus-center{
-  display: flex;
   justify-content: center;
 }
 .al-center{
@@ -206,11 +210,13 @@ input:focus{
 }
 .fa-arrow-down{
   color: var(--nevagtive);
-  margin-top: 5px;
+  background-color: var(--negativeBg);
+  padding: 3px 5px;
 }
 .fa-arrow-up{
   color: var(--positive);
-  margin-top: 5px;
+  background-color: var(--positiveBg);
+  padding: 3px 5px;
 }
 .fa-grip-lines{
   color: var(--gray);

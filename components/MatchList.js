@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react'
-
 import Match from './Match';
 import MatchHeader from './MatchHeader';
 
 function MatchList({matches,userData,id,setUserName,platform}) {
-    
 
 
   return (

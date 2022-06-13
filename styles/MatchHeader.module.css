@@ -1,0 +1,22 @@
+.rowResponsive{
+    flex-direction: column;
+}
+@media (max-width: 768px) {
+    .winsResponsive{
+        width: 100%;
+        margin-right: 5px;
+    }
+    .matchesDataResponsive{
+        width: 100%;
+        margin-top: 8px;
+    }
+    .matchInfo{
+        flex-direction: column;
+    }
+    .rowResponsive{
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        padding: 0px 10px;
+    }
+}

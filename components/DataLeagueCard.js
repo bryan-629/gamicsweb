@@ -1,10 +1,9 @@
 import React from "react";
+import useUtils from "../services/useUtils";
 import styles from "../styles/DataLeagueCard.module.css";
 function DataLeagueCard({ userData, children }) {
   //userData.data.userDataBrCal.kd
-  function formatNumber (n, d = 3) {
-    return new Intl.NumberFormat('es-ES',{ maximumSignificantDigits: d, minimumSignificantDigits:2 }).format(n)
-    }
+  const [parseUser,getWeekTime,formatNumber] = useUtils();
     
   return (
     <div className={` p-16 mb-8 radius cardBackground`}>

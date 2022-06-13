@@ -23,7 +23,12 @@ function useUtils() {
       }
       return dateArray;
     }
-  return [parseUser,getWeekTime]
+
+    const formatNumber = (n, d = 3) => {
+      return new Intl.NumberFormat('es-ES',{ maximumSignificantDigits: d, minimumSignificantDigits:2 }).format(n)
+      }
+      
+  return [parseUser,getWeekTime,formatNumber]
 }
 
 export default useUtils

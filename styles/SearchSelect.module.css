@@ -10,6 +10,7 @@
     cursor: pointer;
     transition: all ease .09s ;
     width: 21%;
+    justify-content: center;
 }
 .buttonSearchActive:hover{
     -webkit-box-shadow: 0px 0px 22px -4px #FF0000; 
@@ -27,6 +28,7 @@
     transition: all ease .09s ;
     cursor: pointer;
     width: 21%;
+    justify-content: center;
 }
 .container{
     display: flex;

@@ -28,10 +28,7 @@ function Profile({userData,matches,id,setUserName,platform}) {
                   </div>
                   <LineChart periods={userData.data.periods} periodsDate={userData.data.periodsDate}></LineChart>
                 </div>
-                <div className={`cardBackground  radius ${styles.lastMatches}`}>
-                  <div className="mb-8 p-16">
-                    <p className="overline">LAST MATCHES</p>
-                  </div>
+                <div>
                   {matches?.userMatch?
                     <MatchList platform={platform} setUserName={setUserName} id={id} userData={userData} matches={matches} userId={id}>asdfasdf asdfasdf</MatchList>
                     :
