@@ -6,10 +6,10 @@ function TeamTable({ team }) {
       <div className="bg-hr radius p-8 d-flex">
         <div className="row jus-bet w100">
           <div className={`jus-bet row w100`}>
-            <div className="row al-center w100 w25Res ml-12">
+            <div className="row al-center w100 w20Res ml-12">
               <h5 className="text-overflow w100">{team.teamPosition}</h5>
             </div>
-            <div className="row w100 ">
+            <div className="row w-70 ">
               <div className={`jus-center column w100`}>
                 <p className=" body2 text-mute text-center">KD</p>
                 <p className="text-center">
@@ -41,10 +41,10 @@ function TeamTable({ team }) {
           >
             <div className="row jus-bet w100">
               <div className={`jus-bet row w100`}>
-                <div className="row al-center w100 w25Res ml-12">
+                <div className="row al-center w100  w20Res ">
                   <p className=" text-overflow w100">{user.player.username}</p>
                 </div>
-                <div className="row w100 py-12">
+                <div className="row w-70 py-12 ml-12">
                   <div className={`jus-center column w100`}>
                     <p className="text-center w100">
                       {Math.round(user.playerStats.kdRatio * 100) / 100}
