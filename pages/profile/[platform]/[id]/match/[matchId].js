@@ -14,7 +14,7 @@ function MatchDetails({ setMatchId, matches,matchId,userName,matchesDataResponse
   const { id, platform } = router.query;
   const [matchDetails,setMatchDetails] = useState();
   const [getSearchingUsers,playerStats,getPartidasUser,getMatch] = useApi()
-  const [parseUser,getWeekTime] = useUtils();
+  const [parseUser,getWeekTime,formatNumber] = useUtils();
 
   
 
@@ -68,12 +68,12 @@ function MatchDetails({ setMatchId, matches,matchId,userName,matchesDataResponse
                   </div>
                   <div className="column">
                     <h6 className="text-center text-mute">DURATION</h6>
-                    <h5 className="text-center">{gameTime} Minutes</h5>
+                    <h5 className="text-center">{formatNumber(gameTime)} Minutes</h5>
                   </div>
                 </div>
               </div>
               <div className="cardBackground pb-8 radius">
-                <div className="cardBackground pb-8 radius">
+                <div className=" pb-8 radius">
                   <div className="mb-8 p-16">
                       <p className="overline">YOUR TEAM</p>
                   </div>

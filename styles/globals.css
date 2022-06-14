@@ -15,6 +15,7 @@
   --fuente-title: 'Unica One', sans-serif;
   --fuente-body: 'Roboto', sans-serif;
   --mute: rgba(83, 83, 83, 80%);
+  --tableHaderColor : #202024;
 }
 ::selection {
   color: white;
@@ -119,6 +120,9 @@ p{
 }
 .bg-gray{
   background-color: var(--gray);
+}
+.bg-hr{
+  background-color: var(--tableHaderColor);
 }
 .background{
   background-color: var(--background);
