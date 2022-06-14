@@ -16,16 +16,31 @@ function MatchDetails({ setMatchId, matches,matchId,userName,matchesDataResponse
   const [getSearchingUsers,playerStats,getPartidasUser,getMatch] = useApi()
   const [parseUser,getWeekTime] = useUtils();
 
-
+  
 
   
 
-  useEffect(() =>{
-    
-  
-   
-  },[])
+  let date = new Date(matchDataResponse.yourStats.utcStartSeconds * 1000).toLocaleDateString();
 
+  let mode;
+  console.log((new Date(matchDataResponse.yourStats.utcEndSeconds).getTime() - new Date(matchDataResponse.yourStats.utcStartSeconds).getTime()))
+  let gameTime = Math.abs((new Date(matchDataResponse.yourStats.utcEndSeconds).getTime() - new Date(matchDataResponse.yourStats.utcStartSeconds).getTime()) / 60)
+
+  if (matchDataResponse.yourStats.mode.includes("rebirth")) {
+    mode = "REBIRTH ";
+  } else if (matchDataResponse.yourStats.mode.includes("plun")) {
+    mode = "PLUNDER ";
+  } else {
+    mode = "BR ";
+  };
+
+  if (matchDataResponse.yourStats.mode.includes("quad")) {
+    mode = mode + "SQUADS";
+  } else if (matchDataResponse.yourStats.mode.includes("trios")) {
+    mode = mode + "TRIOS";
+  } else if (matchDataResponse.yourStats.mode.includes("duos")) {
+    mode = mode + "DUOS";
+  }
 
   
 
@@ -43,17 +58,17 @@ function MatchDetails({ setMatchId, matches,matchId,userName,matchesDataResponse
             <div className={` radius columnLeft`}>
               <div className="cardBackground pb-8 radius mb-8">
                 <div className="pt-16">
-                  <h4 className="text-center">BR DUOS</h4>
-                  <p className="caption text-center">BR DUOS</p>
+                  <h5 className="text-center">{mode}</h5>
+                  <p className="caption text-center">{date}</p>
                 </div>
                 <div className="row jus-ar my-12">
                   <div className="column">
-                    <h5 className="text-center">PLACE</h5>
-                    <h4 className="text-center">5</h4>
+                    <h6 className="text-center text-mute">PLACE</h6>
+                    <h5 className="text-center">{matchDataResponse.yourStats.playerStats.teamPlacement}</h5>
                   </div>
                   <div className="column">
-                    <h5 className="text-center">DURATION</h5>
-                    <h4 className="text-center">25 Minutes</h4>
+                    <h6 className="text-center text-mute">DURATION</h6>
+                    <h5 className="text-center">{gameTime} Minutes</h5>
                   </div>
                 </div>
               </div>

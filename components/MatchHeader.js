@@ -1,7 +1,8 @@
-import React from "react";
+import React,{useEffect,useState} from "react";
 import useUtils from "../services/useUtils";
 import styles from "../styles/MatchHeader.module.css";
-function MatchHeader({ matches, userData }) {
+function MatchHeader({ matches, userData,totalWins }) {
+
 
 
   const [parseUser,getWeekTime,formatNumber] = useUtils();
@@ -14,7 +15,7 @@ function MatchHeader({ matches, userData }) {
 
         <div className={`d-flex jus-bet ${styles.winsResponsive}`}>
           <div className="al-center">
-            <p className="text-success">3 WINS</p>
+            <p className="text-success">{totalWins} WINS</p>
           </div>
           <div className={`row jus-bet w-70 ${styles.matchesDataResponsive}`} >
             <div className="row w100 al-center jus-center">

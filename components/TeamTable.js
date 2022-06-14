@@ -2,9 +2,6 @@ import React,{ useEffect } from 'react'
 
 
 function TeamTable({team}) {
-    useEffect(() =>{
-        console.log(team)
-    })
   return (
     <div>
         <div className='hr-color p-8 d-flex'>

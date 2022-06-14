@@ -11,14 +11,17 @@ function DataLeagueCardWeek({userData,children}) {
       <div className="mb-8">
         <p className="overline">{children}</p>
       </div>
-      <div className="d-flex al-center jus-center mb-16">
+      
+      <div className="row al-center jus-center mb-16">
         <div className="p-8">
-          <div className={`${styles.league}`}></div>
+          <div className={` al-center ${styles.league}`}></div>
         </div>
-        <div className="jus-center ">
+        <div className="al-center">
           <h5>{userData.data.userDataBrCal.userLeague}</h5>
         </div>
       </div>
+     
+      
       <div className="d-flex jus-bet">
         <div className="d-flex column w100 pr-8">
           <div className="row jus-bet al-center mb-16">
