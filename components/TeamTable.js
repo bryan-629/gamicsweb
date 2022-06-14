@@ -3,48 +3,47 @@ import React,{ useEffect } from 'react'
 
 function TeamTable({team}) {
   return (
-    <div>
-        <div className='hr-color p-8 d-flex'>
+    <div className='p-12'>
+        <div className='bg-hr radius p-8 d-flex'>
             <div className="row jus-bet w100">
                 <div className={`jus-center column w-25`}>
-                      <h4 className="text-center">
+                      <h5 className="text-center">
                         {team.teamPosition}
-                      </h4>
+                      </h5>
                     </div>
                     <div className={`jus-center column w-25`}>
-                      <p className="text-center caption">KD</p>
-                      <h6 className="text-center">
+                      <p className=" body2 text-mute text-center">KD</p>
+                      <p className="text-center">
                         {Math.round(team.teamKd * 100 ) / 100}
-                      </h6>
+                      </p>
                     </div>
                     <div className={`jus-center column w-25`}>
-                      <p className="text-center caption">TeamKills</p>
-                      <h6 className="text-center">
+                      <p className=" body2 text-mute text-center">TeamKills</p>
+                      <p className="text-center">
                        {team.teamKills}
-                      </h6>
+                      </p>
                     </div>
             </div>
         </div>
         {team.teamUsers.map((user, index) =>{
            return (
-            <div key={user.player.username} className='bg-list1 p-8 d-flex'>
+            <div key={user.player.username} className={`p-8 d-flex radius  ${index %2 ? ("background"): (null)}`}>
             <div className="row jus-bet w100 ">
                 <div className={`jus-center column w-25`}>
-                      <h6 className="text-center text-overflow my-12">
+                      <p className="text-center body2 text-overflow my-12">
                         {user.player.username}
-                      </h6>
+                      </p>
                     </div>
                     <div className={`jus-center column w-25`}>
                       
-                      <h6 className="text-center">
+                      <p className="text-center">
                       {Math.round(user.playerStats.kdRatio * 100 ) /100 }
-                      </h6>
+                      </p>
                     </div>
                     <div className={`jus-center column w-25`}>
-                      
-                      <h6 className="text-center">
+                      <p className="text-center">
                       {user.playerStats.kills}
-                      </h6>
+                      </p>
                     </div>
             </div>
         </div>
