@@ -317,6 +317,9 @@ input:focus{
 .p-12{
   padding: 12px;
 }
+.py-12{
+  padding: 12px 0px;
+}
 .pb-24{
   padding-bottom: 24px;
 }
@@ -368,7 +371,12 @@ input:focus{
 
 /*--------------------MEDIA QUERYS-------------------------*/
 @media (max-width: 768px) {
-
+  .resm-12{
+    margin: 0px 12px;
+  }
+  .w25Res{
+    width: 25%;
+  }
   .navBarContainer{
       padding: 0 24px;
   }  
