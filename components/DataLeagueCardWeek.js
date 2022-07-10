@@ -17,7 +17,7 @@ function DataLeagueCardWeek({userData,children}) {
           <div className={` al-center ${styles.league}`}></div>
         </div>
         <div className="al-center">
-          <h5>{userData.data.userDataBrCal.userLeague}</h5>
+          <h5>{userData.data.userDataBrWeekCal}</h5>
         </div>
       </div>
      
