@@ -90,7 +90,7 @@ function DataLeagueCard({ userData, children }) {
         <p className="overline">{children}</p>
       </div>
       <div className="d-flex al-center jus-center mb-16">
-        <div className="p-16">
+        <div className="p-8">
         <Image 
             width={100}
             height={42}
