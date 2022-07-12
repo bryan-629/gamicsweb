@@ -91,7 +91,7 @@ function DataLeagueCardWeek({userData,children}) {
       </div>
       
       <div className="row al-center jus-center mb-16">
-        <div className="p-9">
+        <div className="p-16">
             <Image 
 
             width={100}
