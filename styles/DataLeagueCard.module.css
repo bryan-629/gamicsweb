@@ -1,6 +1,11 @@
 .league{
-    height: 80px;
-    width: 80px;
-    background-color: var(--gray);
+    height: 76px;
+    width: 76px;
+    border-color: var(--gray);
+    border-style: solid;
+
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

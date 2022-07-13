@@ -48,15 +48,15 @@ function Match({
               className={
                 match.playerStats.teamPlacement < 10
                   ? match.playerStats.teamPlacement == 1
-                    ? "text-success"
+                    ? "text-success "
                     : "text-gray"
                   : "text-mute"
               }
             >
               {match.playerStats.teamPlacement}º
             </h6>
-            <p className="text-center my-8">{mode}</p>
-            <p className="text-mute">{date}</p>
+            <h5 className="text-center my-8">{mode}</h5>
+            <p className="text-mute font16">{date}</p>
           </div>
           <div className={`row jus-bet w-70 ${styles.matchesDataResponsive}`}>
             <div className="row w100 al-center jus-center">

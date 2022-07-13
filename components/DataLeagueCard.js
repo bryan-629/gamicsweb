@@ -85,36 +85,41 @@ function DataLeagueCard({ userData, children }) {
     getLeagueImg(userData.data.userDataBrCal.userLeague)
   },[])
   return (
-    <div className={` p-16 mb-8 radius cardBackground`}>
-      <div className="mb-8">
-        <p className="overline">{children}</p>
+    <div className={` p-16 mb-16 radius cardBackground`}>
+      <div className="">
+        <p className="overline text-mute">{children}</p>
       </div>
-      <div className="d-flex al-center jus-center mb-16">
-        <div className="p-16">
-        <Image 
-            width={100}
-            height={42}
-            src={leagueImg}>
-            </Image>
-        </div>
-        <div className="jus-center ">
-          <h5>{userData.data.userDataBrCal.userLeague}</h5>
+      <div className="row al-center jus-center w100 mb-16">
+        <div className="column al-center ">
+          <div className="p-8">
+              <div className={styles.league}>
+                <Image 
+                  width={60}
+                  height={25}
+                  src={leagueImg}>
+                  </Image>
+              </div>
+            </div>
+            <div className="al-center">
+              <h5>{userData.data.userDataBrCal.userLeague}</h5>
+            </div>
         </div>
       </div>
+
       <div className="d-flex jus-bet">
 
           <div className="d-flex column w100 pr-8">
             <div className="row jus-bet al-center mb-16">
                 <p className="body2 text-mute">KD</p>
-                <p>{formatNumber(userData.data.userDataBr.kdRatio)}</p>
+                <p className='bold'>{formatNumber(userData.data.userDataBr.kdRatio)}</p>
             </div>
             <div className="row jus-bet al-center mb-16">
                 <p className="body2 text-mute">KILLS</p>
-                <p>{formatNumber(userData.data.userDataBr.kills)}</p>
+                <p className='bold'>{formatNumber(userData.data.userDataBr.kills)}</p>
             </div>
             <div className="row jus-bet al-center ">
                 <p className="body2 text-mute">DEATHS</p>
-                <p>{formatNumber(userData.data.userDataBr.deaths)}</p>
+                <p className='bold'>{formatNumber(userData.data.userDataBr.deaths)}</p>
             </div>
           </div>
 
@@ -123,15 +128,15 @@ function DataLeagueCard({ userData, children }) {
           <div className="d-flex column w100 pl-8">
             <div className="row jus-bet al-center mb-16">
                 <p className="body2 text-mute">WINS</p>
-                <p>{formatNumber(userData.data.userDataBr.wins)}</p>
+                <p className='bold'>{formatNumber(userData.data.userDataBr.wins)}</p>
             </div>
             <div className="row jus-bet al-center mb-16">
                 <p className="body2 text-mute">TOP 10</p>
-                <p>{formatNumber(userData.data.userDataBr.topTen)}</p>
+                <p className='bold'>{formatNumber(userData.data.userDataBr.topTen)}</p>
             </div>
             <div className="row jus-bet al-center">
                 <p className="body2 text-mute">P/G</p>
-                <p>{formatNumber(userData.data.userDataBr.scorePerMinute, 5)}</p>
+                <p className='bold'>{formatNumber(userData.data.userDataBr.scorePerMinute, 5)}</p>
             </div>
           </div>
 

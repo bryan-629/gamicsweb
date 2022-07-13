@@ -7,7 +7,7 @@ function MatchHeader({ matches, userData,totalWins }) {
 
   const [parseUser,getWeekTime,formatNumber] = useUtils();
   return (
-    <div className={` row p-8 cardBackground radius mb-8`}>
+    <div className={` row p-8 cardBackground radius mb-16`}>
       <div className={`column p-8 ml-24 w100`}>
         <div>
           <p className="body2 text-mute mb-8">LAST 20</p>
@@ -15,7 +15,7 @@ function MatchHeader({ matches, userData,totalWins }) {
 
         <div className={`d-flex jus-bet ${styles.winsResponsive}`}>
           <div className="al-center">
-            <p className="text-success">{totalWins} WINS</p>
+            <p className="text-success font16">{totalWins} WINS</p>
           </div>
           <div className={`row jus-bet w-70 ${styles.matchesDataResponsive}`} >
             <div className="row w100 al-center jus-center">

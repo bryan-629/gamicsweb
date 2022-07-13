@@ -37,6 +37,7 @@ function Search() {
   return (
     
     <div className={`background ${styles.searchContainer}`}>
+      
       {loading?
       (<div className={`jus-center al-center ${styles.loading}`}>
           <h3>Loading...</h3>

@@ -86,53 +86,54 @@ function DataLeagueCardWeek({userData,children}) {
   },[])
   return (
     <div className={` p-16 mb-8 radius cardBackground`}>
-      <div className="mb-8">
-        <p className="overline">{children}</p>
+      <div className="">
+        <p className="overline text-mute">{children}</p>
       </div>
-      
-      <div className="row al-center jus-center mb-16">
-        <div className="p-16">
-            <Image 
-
-            width={100}
-            height={42}
-            src={leagueImg}>
-            </Image>
-        </div>
-        <div className="al-center">
-          <h5>{userData.data.userDataBrWeekCal}</h5>
+      <div className="row al-center jus-center w100 mb-16">
+        <div className="column al-center ">
+          <div className="p-8">
+              <div className={styles.league}>
+                <Image 
+                  width={60}
+                  height={25}
+                  src={leagueImg}>
+                  </Image>
+              </div>
+            </div>
+            <div className="al-center">
+              <h5>{userData.data.userDataBrWeekCal}</h5>
+            </div>
         </div>
       </div>
-     
       
       <div className="d-flex jus-bet">
         <div className="d-flex column w100 pr-8">
           <div className="row jus-bet al-center mb-16">
             <p className="body2 text-mute">KD</p>
-            <p>{formatNumber(userData.data.userDataBrWeek.kdRatio)}</p>
+            <p className='bold'>{formatNumber(userData.data.userDataBrWeek.kdRatio)}</p>
           </div>
           <div className="row jus-bet al-center mb-16">
             <p className="body2 text-mute">KILLS</p>
-            <p>{formatNumber(userData.data.userDataBrWeek.kills)}</p>
+            <p className='bold'>{formatNumber(userData.data.userDataBrWeek.kills)}</p>
           </div>
           <div className="row jus-bet al-center ">
             <p className="body2 text-mute">DEATHS</p>
-            <p>{formatNumber(userData.data.userDataBrWeek.deaths)}</p>
+            <p className='bold'>{formatNumber(userData.data.userDataBrWeek.deaths)}</p>
           </div>
         </div>
 
         <div className="d-flex column w100 pl-8">
           <div className="row jus-bet al-center mb-16">
             <p className="body2 text-mute">HEADSHOT%</p>
-            <p>{formatNumber(userData.data.userDataBrWeek.headshotPercentage *100)}%</p>
+            <p className='bold'>{formatNumber(userData.data.userDataBrWeek.headshotPercentage *100)}%</p>
           </div>
           <div className="row jus-bet al-center mb-16">
             <p className="body2 text-mute">KILLS/GAME</p>
-            <p>{formatNumber(userData.data.userDataBrWeek.killsPerGame)}</p>
+            <p className='bold'>{formatNumber(userData.data.userDataBrWeek.killsPerGame)}</p>
           </div>
           <div className="row jus-bet al-center">
             <p className="body2 text-mute">P/G</p>
-            <p>
+            <p className='bold'>
               {formatNumber(userData.data.userDataBrWeek.scorePerMinute, 5)}
             </p>
           </div>

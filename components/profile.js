@@ -19,12 +19,12 @@ function Profile({userData,matches,id,setUserName,platform}) {
             <div className={`w100 radius d-flex mediaColumn `}>
               <div className={` radius columnLeft`}>
                 <DataLeagueCard userData={userData}>LIFETIME STATS</DataLeagueCard>
-                <DataLeagueCardWeek userData={userData}>WEEK</DataLeagueCardWeek>
+                <DataLeagueCardWeek userData={userData}>WEEK STATS</DataLeagueCardWeek>
               </div>
               <div className={` radius  columnRight`}>
-                <div className={`cardBackground p-16 radius mb-8`}>
+                <div className={`cardBackground p-16 radius mb-16`}>
                   <div className="mb-8 ">
-                    <p className="overline">WEEK CHART</p>
+                    <p className="overline text-mute">WEEK CHART</p>
                   </div>
                   <LineChart periods={userData.data.periods} periodsDate={userData.data.periodsDate}></LineChart>
                 </div>
