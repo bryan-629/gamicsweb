@@ -135,6 +135,7 @@ p{
   background-image: url("/img/imgbg.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
 
 }
 .cardBackground{
