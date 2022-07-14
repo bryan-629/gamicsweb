@@ -11,7 +11,7 @@ function Heading({page}) {
         <meta name="viewport" content="width=device-width, initial-scale=0.85"></meta>
         <link rel="icon" href="/favicon.ico" />
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6770273800407114"
-      crossorigin="anonymous"></script>
+      crossOrigin></script>
       </Head>
   )
 }
