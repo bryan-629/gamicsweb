@@ -12,7 +12,7 @@ function Profile({userData,matches,id,setUserName,platform}) {
     <>
           <Navbar></Navbar>
           <div className={'contentWidthDiv'}>
-            <div className={`d-flex mb-24 ${styles.userProfile}`}>
+            <div className={`d-flex ${styles.userProfile}`}>
               <UserImgLevel userName={userData.data.userName} level={userData.data.level}></UserImgLevel>
             </div>
             {/*<div className={`cardBackground radius mb-12 ${styles.menu}`}></div>*/}

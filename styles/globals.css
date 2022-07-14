@@ -132,7 +132,10 @@ p{
   background-color: var(--tableHaderColor);
 }
 .background{
-  background-color: var(--background);
+  background-image: url("/img/imgbg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
 }
 .cardBackground{
   background-color: var(--cardDark);
