@@ -10,7 +10,7 @@ import  Router from 'next/router';
 
 function Search() {
   const [getSearchingUsers] = useApi(); 
-  const [platform,setPlatform] = useState("psn");
+  const [platform,setPlatform] = useState("uno");
   const [usersList, setUsersList] = useState() // aqui se almacena la lista de usuarios que devuelve la api.
   const [userInput, setUserInput] = useState('') // el id de usuario que a introducido el usuario.
   const [parseUser] = useUtils();
