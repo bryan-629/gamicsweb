@@ -56,8 +56,7 @@ function politica() {
   Usted puede eliminar las cookies en cualquier momento desde su ordenador. Sin
   embargo las cookies ayudan a proporcionar un mejor servicio de los sitios web,
   estás no dan acceso a información de su ordenador ni de usted, a menos de que
-  usted así lo quiera y la proporcione directamente
-  <a href="" target="_blank"></a>. Usted puede aceptar o negar el uso de
+  usted así lo quiera y la proporcione directamente. Usted puede aceptar o negar el uso de
   cookies, sin embargo la mayoría de navegadores aceptan cookies automáticamente
   pues sirve para tener un mejor servicio web. También usted puede cambiar la
   configuración de su ordenador para declinar las cookies. Si se declinan es
@@ -69,11 +68,9 @@ function politica() {
   interés. Una vez que usted de clic en estos enlaces y abandone nuestra página,
   ya no tenemos control sobre al sitio al que es redirigido y por lo tanto no
   somos responsables de los
-  <a
-    href="https://plantillaterminosycondicionestiendaonline.com/"
-    target="_blank"
-    >términos o privacidad</a
-  >
+
+    términos o privacidad
+
   ni de la protección de sus datos en esos otros sitios terceros. Dichos sitios
   están sujetos a sus propias políticas de privacidad por lo cual es
   recomendable que los consulte para confirmar que usted está de acuerdo con
