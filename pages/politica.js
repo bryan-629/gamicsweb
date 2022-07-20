@@ -99,9 +99,9 @@ function politica() {
 </p>
 <p>
   Esta politica de privacidad se han generado en
-  <a href="https://politicadeprivacidadplantilla.com/" target="_blank"
-    >politicadeprivacidadplantilla.com</a
-  >.<br />
+  
+    politicadeprivacidadplantilla.com
+  <br />
 </p>
 <p><strong>Anuncios</strong></p>
 <p>
