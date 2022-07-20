@@ -103,6 +103,10 @@ function politica() {
     >politicadeprivacidadplantilla.com</a
   >.<br />
 </p>
+<p><strong>Anuncios</strong></p>
+<p>
+  En este sitio web añadimos anuncios web provenientes de google Adsense
+</p>
 </div>
   )
 }
